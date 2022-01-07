@@ -1,6 +1,6 @@
-module.exports.middleware = nested;
+module.exports.middleware = middleware;
 
-//Middleware
+//Middleware Example
 app.use((req, res, next) => {
     console.log(Date());
     next();
