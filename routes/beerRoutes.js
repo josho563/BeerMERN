@@ -1,10 +1,8 @@
 // Importing in the router function of the express object
 const router = require('express').Router();
 
-const { query } = require('express');
-const beer = require('../persistence/models/beer.js');
 // Import in the model
-const {Beer} = require('../persistence/models/beer.js');
+const {Beer} = require('../persistence/beer.js');
 
 // Create
 router.post('/create', (req, res) => {
@@ -50,4 +48,6 @@ router.delete('/delete/:id', (req, res) => {
         res.status(200).send(`beer deleted: ID:${req.params.id}`)
     })
 }); 
+
+module.exports = router;
 

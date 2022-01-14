@@ -3,7 +3,7 @@ const express = require('express');
 const cors = require('cors');
 
 //imported routes
-const lizardRoutes = require('./routes/beerRoutes.js');
+const beerRoutes = require('./routes/beerRoutes.js');
 
 //importing mongoose 
 const mongoose = require('mongoose');
@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 //database connection
-mongoose.connect('mongodb+srv://root:root@mycluster.7c6k3.mongodb.net/test' , {useNewUrlParser: true}, 
+mongoose.connect('mongodb://localhost:27017/bar' , {useNewUrlParser: true}, 
 (error) => {
     if(error) {
         console.log("Cant connect to DB ");
