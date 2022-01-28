@@ -1,14 +1,14 @@
 pipeline{
         agent any
         stages{
-            stage('SayHi{
+            stage('SayHi'{
                 steps{
                     sh "echo hi"
                 }
             }
             stage('SayWorked'){
                 steps{
-                    sh "echo hi"
+                    sh "echo Worked"
                 }
             }
         }
