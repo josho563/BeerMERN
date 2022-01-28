@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 //database connection
-mongoose.connect('mongodb://localhost:27017/bar' , {useNewUrlParser: true}, 
+mongoose.connect('mongodb://18.132.13.171:27017/bar' , {useNewUrlParser: true}, 
 (error) => {
     if(error) {
         console.log("Cant connect to DB ");
